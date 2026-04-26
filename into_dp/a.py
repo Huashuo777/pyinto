@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
+
+a = np.array([[1,2,3],[1,2,3]])
+b = np.array([[1],[2],[3]])
+print(np.dot(a,b))
+c = np.arange(0, 6, 0.3)
+print(c)
+d = np.sin(c)
+print(d)
+plt.subplot(2,2,1)
+plt.plot(d,c,"bx--",label = "sin")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.title('cos')
+plt.subplot(2,1,2)
+plt.plot(c,d,label = "cos",linestyle = 'solid')
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title('sin')
+plt.legend()
+plt.show()
+img = imread('C:/Users/HUAWEI/Desktop/周韵.jpg')
+plt.imshow(img)
+plt.show()
